@@ -1,0 +1,22 @@
+Command SummaryTask
+ARM64 Command Example
+ARM32 Command Example
+Assemble
+aarch64-linux-gnu-as file.s -o file.o
+arm-linux-gnueabihf-as file.s -o file.o
+Link
+aarch64-linux-gnu-ld file.o -o binary
+arm-linux-gnueabihf-ld -static file.o -o binary
+Run
+./binary or qemu-aarch64 ./binary
+./binary or qemu-arm ./binary
+Disassemble
+aarch64-linux-gnu-objdump -d binary
+arm-linux-gnueabihf-objdump -d binary
+Debug (QEMU side)
+qemu-aarch64 -L /usr/aarch64-linux-gnu/ -g 1234 ./binary
+qemu-arm -L /usr/arm-linux-gnueabihf -g 1234 ./binary
+Debug (GDB connect)
+gdb-multiarch ... set architecture arm64 ...
+gdb-multiarch ... set architecture arm ...
+
