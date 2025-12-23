@@ -1,4 +1,4 @@
-gdb-multiarch ./hello
+gdb-multiarch ./hello -ex "target remote localhost:1234" -ex "set architecture aarch64" -ex "break _start"
 #(gdb) target remote localhost:1234
 #(gdb) set architecture aarch64
 #(gdb) break _start
