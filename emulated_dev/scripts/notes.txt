@@ -1,0 +1,7 @@
+Enhancements
+VS Code Integration: Create tasks.json for build/run, and launch.json for debugging (attach to QEMU's gdb stub).
+
+Bare-Metal: Use aarch64-elf- toolchain and qemu-system-aarch64 with -M virt for full system emulation.
+
+Resources: ARM Architecture Reference Manual (free from arm.com), Azeria Labs tutorials, or GitHub repos like ARMv8ViaLinuxCommandline.
+
