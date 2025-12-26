@@ -26,3 +26,9 @@ done:
 msg:
     .asciiz "HELLO WORLD" ; String with automatic null terminator
 
+.segment "STARTUP"
+.segment "INIT"
+.segment "LOADADDR"
+.segment "EXEHDR"
+.segment "ONCE"
+
